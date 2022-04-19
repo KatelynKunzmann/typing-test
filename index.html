@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/keyboard.svg" type="image/icon type">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
     <title>Kids Typing Test</title>
 </head>
 <body>
@@ -15,16 +16,20 @@
             <p>Type each sentence exactly as you see it.</p>
         </article>
         <section class="typing-container">
+            <h3 id="random-text">
+                <p>Random text generated here</p>
+            </h3>
             <div class="test-wrapper">
                 <textarea id="test-area" name="textarea" rows="8"
                     placeholder="Start Typing!"></textarea>
             </div>
 
-            <div>
+            <div class="reset-button">
                 <button id="reset">Start Over</button>
             </div>
         </section>
     </main>
     
 </body>
+
 </html>

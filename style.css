@@ -4,9 +4,10 @@ body, button, textarea {
     line-height: 1.5;
 }
 
-.title h1 {
+.title {
     text-align: center;
     margin: 0 auto;
+    padding: 1em 1em;
 }
 
 p {
@@ -26,6 +27,7 @@ body {
 
 .intro p, .test-area {
     margin: 0 auto;
+    text-align: center;
     max-width: 550px;
 }
 
@@ -47,17 +49,26 @@ body {
     flex: 1;
 }
 
+#random-text {
+    text-align: center;
+}
+
+.reset-button {
+    text-align: center;
+    padding: 1em;
+}
+
 #reset {
     padding: .5em 1em;
     font-size: 1.2em;
     font-weight: bold;
-    color: #fcb900;
-    background: white;
-    border: 10px solid #fcb900;
+    color: white;
+    background: #fcb900;
+    border: 8px solid #fcb900;
 }
 
 #reset:hover {
-    color: white;
-    background-color: #fcb900;
+    color: #fcb900;
+    background-color: white;
     cursor: pointer;
 }
