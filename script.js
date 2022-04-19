@@ -1,13 +1,14 @@
 const testWrapper = document.querySelector(".test-wrapper");
 const testArea = document.querySelector("#test-area");
 const resetButton = document.querySelector("#reset");
+const typoContainer = document.querySelector("#typo-container");
 
 // Event listeners
-testArea.addEventListener("keypress", start, false);
 testArea.addEventListener("keyup", accuracyCheck, false);
 resetButton.addEventListener("click", reset, false);
 
-var errors = 0;
+
+var typos = 0;
 var wordsList = [
     "Hello world!",
     "My cat Melody loves to watch the birds at the bird feeder.",
@@ -30,15 +31,24 @@ var randomText = document.querySelector("#random-text p").innerHTML;
 
 
 function accuracyCheck() {
- 
-}
+ let userText = testArea.value;
+ let checkText = randomText.substring(0, userText.length);
 
-function start() {
+ if(userText != checkText) {
+     typos++;
+     typoContainer.innerHTML = "Typos: " + typos;
+     testWrapper.style.borderColor = "red";
+ } else {
+     testWrapper.style.borderColor = "grey";
+     typoContainer.innerHTML = "Typos: " + typos;
+ }
+    
+
 
 }
 
 function reset() {
-    errors = 0;
+    typos = 0;
 
     testArea.value = "";
     testWrapper.style.borderColor = "grey";
@@ -46,5 +56,6 @@ function reset() {
     randomNumSeed = Math.floor((Math.random() * 13));
     document.querySelector("#random-text p").innerHTML = wordsList[randomNumSeed];
     randomText = document.querySelector("#random-text p").innerHTML;
+    typoContainer.innerHTML = "Typos: " + typos;
 }
 

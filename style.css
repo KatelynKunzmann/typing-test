@@ -2,10 +2,10 @@ body, button, textarea {
     font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
     font-size: 18px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .title {
-    text-align: center;
     margin: 0 auto;
     padding: 1em 1em;
 }
@@ -27,7 +27,6 @@ body {
 
 .intro p, .test-area {
     margin: 0 auto;
-    text-align: center;
     max-width: 550px;
 }
 
@@ -39,22 +38,15 @@ body {
 .test-wrapper {
     border: 10px solid grey;
     border-radius: 10px;
-}
-
-.test-wrapper {
     display: flex;
 }
 
 .test-wrapper textarea {
     flex: 1;
-}
-
-#random-text {
-    text-align: center;
+    text-align: left;
 }
 
 .reset-button {
-    text-align: center;
     padding: 1em;
 }
 
