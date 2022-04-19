@@ -30,12 +30,18 @@ document.querySelector("#random-text p").innerHTML = wordsList[randomNumSeed];
 var randomText = document.querySelector("#random-text p").innerHTML;
 
 
-function accuracyCheck() {
+function accuracyCheck(event) {
  let userText = testArea.value;
  let checkText = randomText.substring(0, userText.length);
 
  if(userText != checkText) {
-     typos++;
+     if(event.keyCode == 8) {
+         console.log("backspace");
+         typos--;
+     } else {
+         typos++;
+     }
+     
      typoContainer.innerHTML = "Typos: " + typos;
      testWrapper.style.borderColor = "red";
  } else {
@@ -46,6 +52,7 @@ function accuracyCheck() {
 
 
 }
+
 
 function reset() {
     typos = 0;
