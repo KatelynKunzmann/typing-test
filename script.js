@@ -12,9 +12,9 @@ var typos = 0;
 var wordsList = [
     "Hello world!",
     "My cat Melody loves to watch the birds at the bird feeder.",
-    "My girlfriend Simone is beautiful.",
+    "My friend just came back from the Grand Canyon.",
     "Do not sit at the table yet.",
-    "I looked for my toenail clippers today, but I only found a piece of bacon.",
+    "I want to eat a piece of bacon.",
     "Simone works from home.",
     "The shape of the desk was a circle.",
     "Barney was purple.",
