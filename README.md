@@ -1,7 +1,5 @@
-This project is a typing test website for kids. The purpose is to help young kids learn how to type on a physical keyboard, so they are more adept at using desktop and laptop computers as they grow up. It will incorporate random short sentences. After completion of a sentence, the page will transition into the next sentence for the children to type. An ending page will occur at the end that allows the child to return to the home screen and start over.
+This project is a typing test website for kids. The purpose is to help young kids learn how to type on a physical keyboard, so they are more adept at using desktop and laptop computers as they grow up. It incorporates random short sentences, if the typer makes an error the box turns red and the typo count increases. If the typo is corrected, the box returns to gray. There is a "Next" button on the bottom that proceeds to the next sentence for the child to type. Typos are reset to 0.
 
 | Assets | Source |
 |--------|--------|
-| Images such as dinosaurs or unicorns | CC license |
-| css designs | sourced from online and properly credited in code |
-| Keyboard icon | Keyboard by Maxim Kulikov from NounProject.com |
+| Keyboard Typing image | Typing by Creative Stall from NounProject.com |

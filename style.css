@@ -1,6 +1,6 @@
 body, button, textarea {
     font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.5;
     text-align: center;
 }
@@ -27,7 +27,7 @@ body {
 
 .intro p, .test-area {
     margin: 0 auto;
-    max-width: 550px;
+    max-width: 500px;
 }
 
 .test-area {
