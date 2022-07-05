@@ -3,3 +3,5 @@ This project is a typing test website for kids. The purpose is to help young kid
 | Assets | Source |
 |--------|--------|
 | Keyboard Typing image | Typing by Creative Stall from NounProject.com |
+
+![TypingTestPreview](https://user-images.githubusercontent.com/72430760/177431660-b12f55ea-f214-458e-ad15-f1fc5a74b51b.png)
